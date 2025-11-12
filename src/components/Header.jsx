@@ -9,13 +9,13 @@ function Head() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const images = [
-    "https://ghcdn.rawgit.org/Chidambara-H-N-Bhat/ABI/main/b_1.jpg"
-    "https://ghcdn.rawgit.org/Chidambara-H-N-Bhat/ABI/main/b_5.jpg"
-    "https://ghcdn.rawgit.org/Chidambara-H-N-Bhat/ABI/main/b_6.jpg"
-    "https://ghcdn.rawgit.org/Chidambara-H-N-Bhat/ABI/main/b_11.jpg"
-    "https://ghcdn.rawgit.org/Chidambara-H-N-Bhat/ABI/main/b_13.jpg"
-    "https://ghcdn.rawgit.org/Chidambara-H-N-Bhat/ABI/main/b_10.jpg"
-    "https://ghcdn.rawgit.org/Chidambara-H-N-Bhat/ABI/main/b_17.jpg"
+    "https://ghcdn.rawgit.org/Chidambara-H-N-Bhat/ABI/main/b_1.jpg",
+    "https://ghcdn.rawgit.org/Chidambara-H-N-Bhat/ABI/main/b_5.jpg",
+    "https://ghcdn.rawgit.org/Chidambara-H-N-Bhat/ABI/main/b_6.jpg",
+    "https://ghcdn.rawgit.org/Chidambara-H-N-Bhat/ABI/main/b_11.jpg",
+    "https://ghcdn.rawgit.org/Chidambara-H-N-Bhat/ABI/main/b_13.jpg",
+    "https://ghcdn.rawgit.org/Chidambara-H-N-Bhat/ABI/main/b_10.jpg",
+    "https://ghcdn.rawgit.org/Chidambara-H-N-Bhat/ABI/main/b_17.jpg",
   ];
 
   // Slideshow effect
