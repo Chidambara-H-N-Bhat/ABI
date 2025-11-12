@@ -1,4 +1,5 @@
 import React from 'react'
+import "./clients.css"
 
 function Clients() {
   const ci = [
@@ -14,7 +15,7 @@ function Clients() {
     "http://kumarelectricals.co.in/image/logo/13.jpg"
   ]
   return (
-    <div className="h41">
+      <div className="page-container">
       <h2>Clients</h2>
       <div className="clients-grid">
         {ci.map((url, i) => (

@@ -1,10 +1,15 @@
 import React from 'react'
+import "./services.css"
+
 
 function Services() {
   return (
-    <div className="h41">
+    <div className="page-container">
+
       <h2>Services</h2>
-      <ol>
+
+      <ul className="services-list">
+
         <li>Design, procurement, and equipment specification preparation</li>
         <li>Transmission Lines of 33Kv, 66Kv, 110Kv & 220Kv</li>
         <li>Sub-Stations of 11Kv, 33Kv, 66Kv, 110Kv & 220Kv</li>
@@ -22,7 +27,9 @@ function Services() {
         <li>Cable design, routing, tray and trunking systems</li>
         <li>Earthing systems</li>
         <li>Office and retail lighting solutions</li>
-      </ol>
+      
+      </ul>
+
     </div>
   )
 }

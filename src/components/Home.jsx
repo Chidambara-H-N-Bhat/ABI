@@ -2,7 +2,7 @@ import React from 'react'
 
 function Home() {
   return (
-    <div className="h41">
+    <div className="page-container">
       <h3>Welcome to Kumar Electricals</h3>
     <h5>
       Kumar Electricals is one of the leading organizations executing Turnkey electrical projects for over three decades since its inception in 1979. 

@@ -1,0 +1,19 @@
+.management-card {
+  background: whitesmoke;
+ 
+  border-radius: 8px;
+  margin: 15px 0;
+  box-shadow: black;
+
+}
+
+.management-card h3{
+  color:  rgb(55, 9, 47);
+  margin-bottom: 10px;
+}
+
+.management-card h5{
+  margin-bottom: 10px;
+}
+
+

@@ -1,7 +1,8 @@
 import React from "react";
 const About = () => (
-  <div>
+  <div className="page-container">
     <h2>Profile</h2>
+    
     <h5>
         Kumar Electricals is one of the leading organizations executing Turnkey electrical projects for over three decades since its inception in 1979. Kumar Electricals specializes in Electrical Engineering and Automation with Designing, Supply, Installation and Commission as their core competence. 
         Kumar Electricals has been constantly innovating and providing quality service to its clients. Technical expertise has always been emphasized by Kumar Electricals. 

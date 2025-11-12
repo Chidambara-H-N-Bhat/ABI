@@ -1,61 +1,63 @@
-import React from 'react'
-import { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom'
-import "./Head.css"
-import { FaHome, FaEnvelope } from "react-icons/fa";
+import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
+import { FaHome, FaEnvelope, FaBars, FaTimes } from "react-icons/fa";
 import { MdContactPhone } from "react-icons/md";
+import "./Head.css";
 
+function Head() {
+  const [index, setIndex] = useState(0);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-function    Head() {
-const [index, setIndex] = useState(0);
+  const images = [
+    "https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/b_6.jpg",
+    "https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/b_13.jpg",
+    "https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/b_11.jpg",
+    "https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/b_10.jpg",
+    "https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/b_1.jpg",
+    "https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/b_5.jpg",
+    "https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/b_17.jpg",
+  ];
 
-
-const image=[
-  "http://kumarelectricals.co.in/image/banner/b_11.jpg",
-  "http://kumarelectricals.co.in/image/banner/b_13.jpg",
-  "http://kumarelectricals.co.in/image/banner/b_6.jpg",
-  "http://kumarelectricals.co.in/image/banner/b_10.jpg",
-  "http://kumarelectricals.co.in/image/banner/b_1.jpg",
-  "http://kumarelectricals.co.in/image/banner/b_5.jpg",
-  "http://kumarelectricals.co.in/image/banner/b_9.jpg",
-  "http://kumarelectricals.co.in/image/banner/b_16.gif",
-  "http://kumarelectricals.co.in/image/banner/b_17.jpg",
-
-
-] 
-
-
-useEffect(() => {
+  // Slideshow effect
+  useEffect(() => {
     const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % image.length); 
-    }, 3000); 
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 3000);
     return () => clearInterval(interval);
-  }, [image.length]);
-
-
-
+  }, []);
 
   return (
     <header>
+      {/* Top header: logos + nav */}
       <div className="h">
-        <div className="h11">
-          <img src="http://kumarelectricals.co.in/image/logo_new.gif" alt="logo" className="logo" />
-          <img src="http://kumarelectricals.co.in/image/logo.gif" alt="logo" className="logo" />
+        <div className="logo-container">
+          <img src="https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/logo1.gif" alt="Logo" className="logo-main" />
+          <img src="https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/logo2.gif" alt="Logo Secondary" className="logo-sub" />
         </div>
 
-        <nav className="h12">
-          <NavLink to="/" className="flex items-center gap-2 hover:text-blue-600"><FaHome/>Home</NavLink>
-          <NavLink to="/Contact" className="flex items-center gap-2 hover:text-blue-600"><MdContactPhone />Contact</NavLink>
+        {/* Desktop + Mobile Nav */}
+        <nav className={`nav-links ${menuOpen ? "mobile-active" : ""}`}>
+          <NavLink to="/" className="nav-item"><FaHome /> Home</NavLink>
+          <NavLink to="/Contact" className="nav-item"><MdContactPhone /> Contact</NavLink>
           <a
-          href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&dsh=S-2129400193%3A1762913528468239&hd=kumarelectricals.co.in&osid=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 hover:text-blue-600"
-          ><FaEnvelope />
-          Web mail</a>
+            href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav-item"
+          ><FaEnvelope /> Webmail</a>
         </nav>
+
+        {/* Hamburger Button */}
+        <button
+          className="hamburger"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label={menuOpen ? "Close Menu" : "Open Menu"}
+        >
+          {menuOpen ? <FaTimes /> : <FaBars />}
+        </button>
       </div>
 
+      {/* Bottom nav */}
       <div className="h4">
         <NavLink to="/about">About</NavLink>
         <NavLink to="/management">Management</NavLink>
@@ -65,18 +67,16 @@ useEffect(() => {
         <NavLink to="/services">Services</NavLink>
       </div>
 
+      {/* Slideshow */}
       <div>
         <img
-        src={image[index]}
-        alt="slideshow"
-        className="h3"
-      />
+          src={images[index]}
+          alt="Slideshow"
+          className="slideshow"
+        />
       </div>
     </header>
-  )
+  );
 }
 
-export default Head
-
-
-
+export default Head;
