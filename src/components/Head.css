@@ -1,0 +1,107 @@
+
+header {
+  width: 100%;
+  background-color: white;
+  box-shadow: black;
+}
+
+.h {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;        
+  padding: 10px 30px;
+}
+
+.h11{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  
+}
+
+.logo {
+  height: 80px;
+  display: block;
+}
+
+.h12{
+  display: flex;
+  gap: 20px; 
+  align-items:flex-start;
+}
+
+
+
+/* Right-side links */
+.h12 a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: grey;
+  font-weight: 500;
+}
+
+.h12 a:hover {
+  color: blue;
+}
+
+/* Bottom section links */
+.h4 {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(52, 52, 145);
+  padding: 10px 0;
+}
+
+.h4 a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: 500;
+}
+
+.h4 a:hover {
+  text-decoration: underline;
+}
+
+
+.h3{
+  width: 100%;       /* stretch to page width */
+  height: 300px;     /* maintain fixed height */
+  object-fit: cover; /* crop image nicely instead of distortion */
+  display: block;
+  margin-bottom: 20px;
+}
+
+.h4 a{
+  margin:0 15px;
+  text-decoration: none;
+  color: white
+}
+
+.h4 a.active {
+  color: rgb(52, 145, 78);
+  text-decoration: underline;
+}
+
+.h41 {
+  padding: 20px 30px;
+  background-color: whitesmoke;
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.client-img {
+  width: 151.6px;
+  height: 101.6px;
+  object-fit: cover;
+  border: 1px solid white
+}
+
+
+
