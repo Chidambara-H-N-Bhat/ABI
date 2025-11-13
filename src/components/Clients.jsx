@@ -3,14 +3,14 @@ import "./clients.css"
 
 function Clients() {
   const ci = [
-    "https://kumarelectricals.co.in/image/logo/6.jpg",
-    "https://kumarelectricals.co.in/image/logo/3.jpg",
-    "https://kumarelectricals.co.in/image/logo/4.jpg",
-    "https://kumarelectricals.co.in/image/logo/7.jpg",
-    "https://kumarelectricals.co.in/image/logo/8.jpg",
-    "https://kumarelectricals.co.in/image/logo/9.jpg",
-    "https://kumarelectricals.co.in/image/logo/11.jpg",
-    "https://kumarelectricals.co.in/image/logo/13.jpg"
+    "http://kumarelectricals.co.in/image/logo/6.jpg",
+    "http://kumarelectricals.co.in/image/logo/3.jpg",
+    "http://kumarelectricals.co.in/image/logo/4.jpg",
+    "http://kumarelectricals.co.in/image/logo/7.jpg",
+    "http://kumarelectricals.co.in/image/logo/8.jpg",
+    "http://kumarelectricals.co.in/image/logo/9.jpg",
+    "http://kumarelectricals.co.in/image/logo/11.jpg",
+    "http://kumarelectricals.co.in/image/logo/13.jpg"
   ]
   return (
       <div className="page-container">
