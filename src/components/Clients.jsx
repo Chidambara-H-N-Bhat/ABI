@@ -4,10 +4,8 @@ import "./clients.css"
 function Clients() {
   const ci = [
     "https://kumarelectricals.co.in/image/logo/6.jpg",
-    
     "https://kumarelectricals.co.in/image/logo/3.jpg",
     "https://kumarelectricals.co.in/image/logo/4.jpg",
-    
     "https://kumarelectricals.co.in/image/logo/7.jpg",
     "https://kumarelectricals.co.in/image/logo/8.jpg",
     "https://kumarelectricals.co.in/image/logo/9.jpg",
