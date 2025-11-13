@@ -1,5 +1,5 @@
 import React from 'react'
-import "./clients.css"
+
 
 function Clients() {
   const ci = [
