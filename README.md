@@ -39,9 +39,51 @@ The project is designed to be fully responsive, working on both desktop and mobi
  
   
 
+###Technologies Used
+
+Frontend: React (Vite)
+
+Routing: React Router DOM
+
+Styling: CSS (custom + responsive design)
+
+Icons: React Icons (FaHome, MdContactPhone, FaEnvelope, FaBars, FaTimes)
+
+Version Control: Git/GitHub
+
+
+
+###Project Structure
+
+
+/src
+ ├─ /components
+ │    └─ Header.jsx
+ │    └─ About.jsx
+ │    └─ Management.jsx
+ │    └─ WhyUs.jsx
+ │    └─ Specialization.jsx
+ │    └─ Clients.jsx
+ │    └─ Services.jsx
+ │    └─ Home.jsx
+ │    └─ Contact.jsx
+ ├─ App.jsx
+ ├─ main.jsx
+ └─ Header.css
+
   
- 
+
+###Usage
+
+Navigate between pages using the top and bottom navigation bars
+
+On mobile devices, click the hamburger menu to view navigation links
+
+Click client logos to view details (if linked in future updates)
+
+Hover over links and images to see animations
   
+
 
 
 
