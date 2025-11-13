@@ -8,7 +8,6 @@ function Clients() {
     "https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/11.jpg",
     "https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/13.jpg",
     "https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/4.jpg",
-    "https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/5.jpg",
     "https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/7.jpg",
     "https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/8.jpg",
     "https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/9.jpg",  
