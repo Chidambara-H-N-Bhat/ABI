@@ -3,14 +3,15 @@ import "./clients.css"
 
 function Clients() {
   const ci = [
-    "http://kumarelectricals.co.in/image/logo/6.jpg",
-    "http://kumarelectricals.co.in/image/logo/3.jpg",
-    "http://kumarelectricals.co.in/image/logo/4.jpg",
-    "http://kumarelectricals.co.in/image/logo/7.jpg",
-    "http://kumarelectricals.co.in/image/logo/8.jpg",
-    "http://kumarelectricals.co.in/image/logo/9.jpg",
-    "http://kumarelectricals.co.in/image/logo/11.jpg",
-    "http://kumarelectricals.co.in/image/logo/13.jpg"
+    "https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/6.jpg",
+    "https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/3.jpg",
+    "https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/11.jpg",
+    "https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/13.jpg",
+    "https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/4.jpg",
+    "https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/5.jpg",
+    "https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/7.jpg",
+    "https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/8.jpg",
+    "https://raw.githubusercontent.com/Chidambara-H-N-Bhat/ABI/main/9.jpg",  
   ]
   return (
       <div className="page-container">
